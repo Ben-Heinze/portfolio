@@ -1,57 +1,73 @@
 body {
 	/*font-family: 'Borel', cursive;*/
-  	margin: 0;
-  	padding: 0;
-  	overflow-y:auto;
-  	overflow-x:hidden;
+	margin: 0;
+	padding: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .meet-the-team {
-  	text-align: center;
-  	padding-top: 30px;
+	text-align: center;
+	padding-top: 30px;
 	font-size: 32px;
 }
+
 .team-member {
-	display: inline-block;
-	text-align: center;
-	border:4px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
 	font-size: 32px;
 	margin: 10px 0;
 }
+
 .team-member img {
 	width: 400px;
 	height: auto;
+	margin-right: 5%;
 }
+@media (max-width: 800px) {
+.team-member img {
+	width: 50%;
+	height: auto;
+	margin-right: 5%;
+}
+
+}
+
 .team-member .description {
-	font-size:20px;
+	font-size: 20px;
 	font-weight: normal;
 }
 
-/* description of employees */
-.description{
-	width:400px;
+/* Adjust description width to fit better beside the image */
+.description {
+	width: 100%;
+	max-width: 600px;
 }
 
-/* black divider line */
+/* Black divider line */
 .divider {
 	height: 5px;
 	background-color: black;
 	margin: 20px 0;
-	padding-left:30px;
-	padding-right:30px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-/* Endind message */
-.paragraph{
-	font-size:16px;
-	text-align:center;
-	padding:20px;
+/* Ending message */
+.paragraph {
+	font-size: 16px;
+	text-align: center;
+	padding: 20px;
 }
-/* h3 is the Find us and Business hours, ect
-   P is the info for the corresponding things */
-h3{
-	padding-left:40px;
+
+/* h3 is the Find us and Business hours, etc
+   p is the info for the corresponding things */
+h3 {
+	padding-left: 40px;
 }
+
 p {
 	padding: 0;
 }

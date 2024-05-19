@@ -3,25 +3,42 @@ body {
 	overflow-x: hidden;
 	overflow-y: auto;
 	font-family: 'Radio Canada Big', serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 h1 {
 	margin: 0;
 }
 
-
-.intro h1{
+.intro h1 {
 	text-align: center;
 }
 
 #gallery {
-	float: left;
 	display: grid;
-	grid-template-columns: repeat(2, 50%);
+	grid-template-columns: repeat(2, 1fr);
 	gap: 0; /* No gap between grid items */
-	margin: 5%;
+	margin: 0; /* Remove any default margin */
 	font-size: 0; /* Set font size to 0 to remove any space */
+	width: 60%; /* Default width */
+	height: 60vh;
 }
+
+@media (min-width: 2100px) {
+	#gallery {
+		width: 50%;
+	}
+}
+@media (max-width: 990px) {
+	#gallery {
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+}
+
+
 
 #gallery img {
 	max-width: 100%;

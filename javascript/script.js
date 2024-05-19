@@ -8,6 +8,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
     if (firstName && lastName && email && message) {
         alert('Form submitted successfully!');
+        console.log(firstName + ' ' + lastName + ' ' + email+ ' ' + message);
         // Here you can add code to actually send the form data, e.g., using AJAX.
     } else {
         alert('Please fill in all fields.');
