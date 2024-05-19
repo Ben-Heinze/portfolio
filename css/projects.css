@@ -1,0 +1,65 @@
+/* Add this CSS to your existing styles */
+
+/* Assuming you have an element with an id or class for your logo container */
+#logoContainer {
+    position: fixed;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    display: flex;
+    gap: 10px; /* Space between the logos */
+}
+
+#logoContainer img {
+    width: 40px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Your existing CSS */
+.big-text {
+    font-size: 32px;
+    background: #4176bf;
+    color: white;
+    font-family: 'Radio Canada Big', sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    max-height: 100vh;
+}
+
+.menu {
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 10px;
+}
+
+.food-item {
+    margin-bottom: 20px;
+}
+
+.food-item strong {
+    display: block;
+    font-weight: bold;
+}
+
+.price {
+    margin-top: 5px;
+    display: block;
+    font-size: 16px;
+    color: black;
+}
+
+p {
+    padding: 0;
+}
