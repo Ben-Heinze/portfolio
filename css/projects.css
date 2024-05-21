@@ -1,65 +1,164 @@
-/* Add this CSS to your existing styles */
-
-/* Assuming you have an element with an id or class for your logo container */
-#logoContainer {
-    position: fixed;
-    top: 10px; /* Adjust the top position as needed */
-    right: 10px; /* Adjust the right position as needed */
-    display: flex;
-    gap: 10px; /* Space between the logos */
-}
-
-#logoContainer img {
-    width: 40px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Your existing CSS */
-.big-text {
-    font-size: 32px;
-    background: #4176bf;
-    color: white;
-    font-family: 'Radio Canada Big', sans-serif;
-    font-weight: 700;
-}
-
-.container {
-    overflow-y: auto;
+body {
+    margin: 0;
     overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'Radio Canada Big', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.intro h1 {
     text-align: center;
-    max-height: 100vh;
 }
 
-.menu {
-    overflow-y: auto;
-    overflow-x: hidden;
+/*Table of Contents*/
+.grid-container {
+    color: #2B78E4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px; /* Increase this value to increase the width of the grid */
+    margin: 0 auto; /* Center the grid */
+}
+.grid-item {
+    padding: 10px;
+    text-align: left;
+}
+.grid-item h1 {
+    font-size: 36px;
+}
+.grid-item li {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #5b91ec;
+}
+
+/*Project Summary*/
+.banner {
+    height: 50px;
+    width: 100%;
+    background-color: #5b92ee;
+}
+
+.banner h1{
+    color:white;
+    font-size: 36px;
+    margin: 0 0 0 20px;
+}
+
+.summary1 {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    width: calc(100% - 40px); /* Account for padding on both sides */
+    padding: 0 20px; /* Padding on both sides of the screen */
+    background-color: #f3f3f3;
 }
 
-.column {
-    flex: 1;
-    max-width: 300px;
-    margin: 0 10px;
+.summary1 .img {
+    padding: 10px;
+    width: 33.33%; /* 1/3rd of the width */
 }
 
-.food-item {
-    margin-bottom: 20px;
+.summary1 .img img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+    margin: 20px 0; /* Adjust vertical margin as needed */
 }
 
-.food-item strong {
-    display: block;
+.description {
+
+    margin: 20px 20px 20px 20px;
+    width: 66.67%; /* 2/3rd of the width */
+}
+
+.description p {
+    font-weight: normal;
+    margin: 20px 0; /* Adjust vertical margin as needed */
+    font-size: 30px; /* Set font size as a percentage of the default font size */
+}
+
+/* Media Query for mobile screens */
+@media only screen and (max-width: 1000px) {
+    .summary1 {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .summary1 .img, .description {
+        width: 100%; /* Full width for both columns on smaller screens */
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .summary1 .description{
+        margin: 100px 500px 100px 500px ;
+    }
+}
+
+
+/*Picture gallery*/
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0; /* No gap between grid items */
+    margin: 0; /* Remove any default margin */
+    font-size: 0; /* Set font size to 0 to remove any space */
+    width: 60%; /* Default width */
+    height: 80%;
+}
+
+@media (min-width: 2100px) {
+    #gallery {
+        width: 50%;
+    }
+}
+@media (max-width: 990px) {
+    #gallery {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensure images are block elements */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+}
+
+#gallery img:hover {
+    filter: brightness(80%);
+}
+
+.imageContainer {
+    position: relative;
+    margin: 0;
+    padding: 0; /* Remove any default padding */
+    font-size: initial; /* Reset font size for child elements */
+}
+
+.imageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
     font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.price {
-    margin-top: 5px;
-    display: block;
-    font-size: 16px;
-    color: black;
-}
-
-p {
-    padding: 0;
+h3 {
+    padding-left: 40px;
 }

@@ -1,78 +1,73 @@
 body {
+	/*font-family: 'Borel', cursive;*/
 	margin: 0;
-	overflow-x: hidden;
+	padding: 0;
 	overflow-y: auto;
-	font-family: 'Radio Canada Big', serif;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	overflow-x: hidden;
 }
 
-h1 {
-	margin: 0;
-}
-
-.intro h1 {
+.meet-the-team {
 	text-align: center;
-}
-
-#gallery {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 0; /* No gap between grid items */
-	margin: 0; /* Remove any default margin */
-	font-size: 0; /* Set font size to 0 to remove any space */
-	width: 60%; /* Default width */
-	height: 60vh;
-}
-
-@media (min-width: 2100px) {
-	#gallery {
-		width: 50%;
-	}
-}
-@media (max-width: 990px) {
-	#gallery {
-		width: 100%;
-		grid-template-columns: 1fr;
-	}
-}
-
-
-
-#gallery img {
-	max-width: 100%;
-	height: auto;
-	display: block; /* Ensure images are block elements */
-	margin: 0; /* Remove any default margin */
-	padding: 0; /* Remove any default padding */
-}
-
-#gallery img:hover {
-	filter: brightness(80%);
-}
-
-.imageContainer {
-	position: relative;
-	margin: 0;
-	padding: 0; /* Remove any default padding */
-	font-size: initial; /* Reset font size for child elements */
-}
-
-.imageText {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
+	padding-top: 30px;
 	font-size: 32px;
-	font-weight: bold;
-	text-align: center;
-	background-color: rgba(0, 0, 0, 0.7);
-	padding: 10px;
-	border-radius: 5px;
 }
 
+.team-member {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	font-size: 32px;
+	margin: 10px 0;
+}
+
+.team-member img {
+	width: 400px;
+	height: auto;
+	margin-right: 5%;
+}
+@media (max-width: 800px) {
+	.team-member img {
+		width: 50%;
+		height: auto;
+		margin-right: 5%;
+	}
+
+}
+
+.team-member .description {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/* Adjust description width to fit better beside the image */
+.description {
+	width: 100%;
+	max-width: 600px;
+}
+
+/* Black divider line */
+.divider {
+	height: 5px;
+	background-color: black;
+	margin: 20px 0;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/* Ending message */
+.paragraph {
+	font-size: 16px;
+	text-align: center;
+	padding: 20px;
+}
+
+/* h3 is the Find us and Business hours, etc
+   p is the info for the corresponding things */
 h3 {
 	padding-left: 40px;
+}
+
+p {
+	padding: 0;
 }
