@@ -22,19 +22,31 @@ body{
   	width: 50%;
 	height:auto;
 }
-header{
-	overflow:hidden;
-	background-color:#F5F5F5;
+header {
+	overflow: hidden;
+	background-color: #F5F5F5;
 	color: black;
-	width:100%;
-	max-height:80px;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	border-bottom: 10px solid #2B78E4FF;
-	padding-bottom:10px;
-	padding-top:10px;
+	width: 100%;
+	max-height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 30px solid #5b92ee;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	position: relative; /* Ensure the header has a positioning context */
 }
+.overlapping-content {
+	position: absolute; /* Position the overlapping content absolutely */
+	top: 10px; /* Adjust top value to position content inside the header */
+	left: 10px; /* Adjust left value to position content inside the header */
+	transform: translateY(0px); /* Move the content down to overlap the border */
+}
+.overlapping-content h1 {
+	font-family: 'Parisienne', sans-serif;
+	font-size: 64px;
+}
+
 
 a{
 	padding-top:20px;
@@ -49,7 +61,7 @@ a:active{
 .button-65 {
 	appearance: none;
 	backface-visibility: hidden;
-	background-color: #2f80ed;
+	background-color: #5ba0fd;
 	border-radius: 10px;
 	border-style: none;
 	box-shadow: none;
@@ -57,18 +69,18 @@ a:active{
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-family: 'Radio Canada Big',sans-serif;
+	font-family: 'Radio Canada Big', sans-serif;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 30px;
 	height: 50px;
 	width: auto;
 	letter-spacing: normal;
-	line-height: 1.5;
-	outline: none;
+	line-height: 50px; /* Match this to the height of the button */
+	outline: 3px solid #ffffff; /* Added blue outline */
 	overflow: hidden;
-	padding: 14px 30px;
+	padding: 0 25px; /* Adjusted padding to fine-tune text centering */
 	position: relative;
-	text-align: center;
+	text-align: center; /* Ensure text is centered */
 	text-decoration: none;
 	transform: translate3d(0, 0, 0);
 	transition: all .3s;
@@ -82,7 +94,9 @@ a:active{
 
 /*Menu button*/
 .button-65:hover {
-	background-color: #1366d6;
+	color: #5b9ffb;
+	background-color: #ffffff;
+	outline: 3px solid #5b9ffb; /* Changed outline color on hover */
 	box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
 	opacity: 1;
 	transform: translateY(0);
@@ -101,10 +115,21 @@ a:active{
 }
 @media (min-width: 768px) {
 	.button-65 {
-		padding: 5px 22px;
+		padding: 0 13px; /* Adjusted padding to fine-tune text centering for larger screens */
 		width: 140px;
+		line-height: 50px; /* Ensure consistency across different screen sizes */
 	}
 }
+@media (max-width: 768px) {
+	.button-65 {
+		padding: 0 1px; /* Adjusted padding to fine-tune text centering for larger screens */
+		font-size: 20px;
+		width: 90px;
+		line-height: 50px; /* Ensure consistency across different screen sizes */
+	}
+}
+
+
 
 
 /*....TOP BANNER LEFT...........................*/
