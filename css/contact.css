@@ -24,6 +24,7 @@ body {
     margin: auto;
     max-width: 60vh; /* Set max-width to 60vh when screen width is very wide */
     width: 80%; /* Adjust width as needed when screen width is shrunken */
+    margin-top: 40px;
 }
 
 @media screen and (min-width: 1200px) {
