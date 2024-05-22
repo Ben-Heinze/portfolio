@@ -8,6 +8,24 @@ body {
     align-items: center;
 }
 
+body {
+    margin: 0; /* Remove default body margin */
+}
+
+.width {
+    border-radius: 10px;
+    max-width: 1440px; /* Limit maximum width to 2560px */
+    margin: 0 auto; /* Center the container */
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.left-column, .right-column {
+    background-color: #959595; /* Gray background */
+    /* Additional styling for left and right columns */
+}
+
 h1 {
     margin: 0;
 }
@@ -38,9 +56,23 @@ h1 {
     font-size: 18px;
     color: #5b91ec;
 }
+/*Project sector header*/
+.sector {
+    background-color: #5ba0fd;
+    width: 50%; /* Set the width of the div */
+    margin: 20px auto; /* Center the div horizontally */
+    border-radius: 10px;
+
+}
+.sector h1{
+    color: white;
+    text-align: center;
+}
+
 
 /*Project Summary*/
 .banner {
+    text-align: left;
     height: 50px;
     width: 100%;
     background-color: #5b92ee;
@@ -49,14 +81,14 @@ h1 {
 .banner h1{
     color:white;
     font-size: 36px;
-    margin: 0 0 0 20px;
+    margin: 0 20px 0 20px;
 }
 
 .summary1 {
     display: flex;
     width: calc(100% - 40px); /* Account for padding on both sides */
     padding: 0 20px; /* Padding on both sides of the screen */
-    background-color: #f3f3f3;
+    background-color: #efefef;
 }
 
 .summary1 .img {
@@ -69,6 +101,15 @@ h1 {
     height: auto;
     margin: 20px 0; /* Adjust vertical margin as needed */
 }
+
+.summary2 .summary1{
+    background-color: #ffffff;
+    border-bottom: #000000;
+    border-bottom-width: 2px;
+}
+
+
+
 
 .description {
 
@@ -91,12 +132,6 @@ h1 {
     .summary1 .img, .description {
         width: 100%; /* Full width for both columns on smaller screens */
         font-size: 2vw;
-    }
-}
-
-@media (min-width: 1400px) {
-    .summary1 .description{
-        margin: 100px 500px 100px 500px ;
     }
 }
 
@@ -123,7 +158,6 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
-
 
 
 #gallery img {
