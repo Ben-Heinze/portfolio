@@ -7,9 +7,23 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     const message = document.getElementById('message').value.trim();
 
     if (firstName && lastName && email && message) {
-        alert('Form submitted successfully!');
-        console.log(firstName + ' ' + lastName + ' ' + email+ ' ' + message);
-        // Here you can add code to actually send the form data, e.g., using AJAX.
+        console.log(firstName + ' ' + lastName + ' ' + email + ' ' + message);
+
+        // Initialize emailJS with the public key
+        emailjs.init('vgmAdf6X-pKROAEsk');
+
+        // Send the form using emailJS
+        emailjs.sendForm('service_ph5mhet', 'template_50urqwe', this)
+            .then(response => {
+                console.log('SUCCESS!', response.status, response.text);
+
+                // Reset the form fields
+                document.getElementById('contactForm').reset();
+                alert('Form submitted successfully!');
+            }, error => {
+                console.log('FAILED...', error);
+            });
+
     } else {
         alert('Please fill in all fields.');
     }

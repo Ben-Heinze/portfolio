@@ -14,7 +14,7 @@ body {
 
 .width {
     border-radius: 10px;
-    max-width: 1440px; /* Limit maximum width to 2560px */
+    max-width: 1130px; /* Limit maximum width to 2560px */
     margin: 0 auto; /* Center the container */
     margin-top: 0px;
     margin-bottom: 30px;
@@ -63,7 +63,7 @@ h1 {
     width: 50%; /* Set the width of the div */
     margin: 20px auto; /* Center the div horizontally */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 @media screen and (max-width: 800px) {
     .sector{

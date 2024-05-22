@@ -36,6 +36,14 @@ header {
 	padding-top: 10px;
 	position: relative; /* Ensure the header has a positioning context */
 }
+@media (max-width: 768px) {
+	header {
+		padding-top: 110px;
+		padding-bottom: 110px;
+	}
+}
+
+
 .overlapping-content {
 	position: absolute; /* Position the overlapping content absolutely */
 	top: 10px; /* Adjust top value to position content inside the header */
@@ -61,7 +69,7 @@ a:active{
 .button-65 {
 	appearance: none;
 	backface-visibility: hidden;
-	background-color: #5ba0fd;
+	background-color: #2e7ff1;
 	border-radius: 10px;
 	border-style: none;
 	box-shadow: none;
@@ -92,7 +100,7 @@ a:active{
 	margin: 5px; /* Added margin for spacing between buttons */
 }
 
-/*Menu button*/
+/* Menu button */
 .button-65:hover {
 	color: #5b9ffb;
 	background-color: #ffffff;
@@ -117,56 +125,27 @@ a:active{
 	.button-65 {
 		padding: 0 13px; /* Adjusted padding to fine-tune text centering for larger screens */
 		width: 140px;
+
 		line-height: 50px; /* Ensure consistency across different screen sizes */
 	}
 }
 @media (max-width: 768px) {
 	.button-65 {
-		padding: 0 1px; /* Adjusted padding to fine-tune text centering for larger screens */
-		font-size: 20px;
-		width: 90px;
+		height: 60px;
+		padding: 0 10px; /* Adjusted padding to fine-tune text centering for smaller screens */
+		font-size: 30px;
+		width: 50vw; /* Adjust width to 85% */
 		line-height: 50px; /* Ensure consistency across different screen sizes */
+		display: block; /* Make the buttons stack on top of each other */
+		margin: 10px auto; /* Center the buttons and add space between them */
 	}
-}
-
-
-
-
-/*....TOP BANNER LEFT...........................*/
-#restuarantLogoContainer{
-	justify-content:flex-start;
-
-}
-#restuarantLogoContainer img{
-	width:auto;
-	height:60px;
-}
-
-b{
-	font-weight: bolder;
-}
-
-
-/*....TOP BANNER CENTER...........................*/
-
-#navigation {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative; /* Establishes a positioning context */
-}
-
-#navigation ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-#navigation li {
-	font-size: 24px;
-	padding: 8px;
-	margin: 0 10px;
+	#navigation ul {
+		padding: 0;
+		list-style-type: none; /* Remove default list styling */
+	}
+	#navigation ul li {
+		width: 100%; /* Ensure the list items take full width */
+	}
 }
 
 /* Social media logos */
