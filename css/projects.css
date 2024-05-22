@@ -56,6 +56,8 @@ body {
     margin: 0; /* Remove default body margin */
 }
 
+/*///////////////////////////////////////////////////*/
+
 .width {
     border-radius: 10px;
     max-width: 1130px; /* Limit maximum width to 2560px */
@@ -70,6 +72,8 @@ body {
     background-color: #959595; /* Gray background */
     /* Additional styling for left and right columns */
 }
+
+/*///////////////////////////////////////////////////*/
 
 h1 {
     margin: 0;
@@ -101,6 +105,9 @@ h1 {
     font-size: 18px;
     color: #5b91ec;
 }
+
+/*///////////////////////////////////////////////////*/
+
 /*Project sector header*/
 .sector {
     background-color: #2b78e4;
@@ -120,21 +127,39 @@ h1 {
     color: white;
     text-align: center;
 }
+/*///////////////////////////////////////////////////*/
 
-
-/*Project Summary*/
+/*Project Banner with clickable links*/
 .banner {
-    text-align: left;
+    display: flex;
+    align-items: center;
     height: 50px;
     width: 100%;
     background-color: #5b92ee;
 }
-
-.banner h1{
-    color:white;
+.banner h1 {
+    color: white;
     font-size: 36px;
     margin: 0 20px 0 20px;
+    line-height: 1; /* Resetting line-height */
+    vertical-align: middle; /* Align text vertically in the middle */
+    transition: color 0.3s ease; /* Adding transition for smooth color change */
 }
+
+.banner a{
+    margin-bottom:15px;
+}
+.link-container {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.link-container:hover .link-icon,
+.link-container:hover h1 {
+    filter: invert(34%) sepia(95%) saturate(2458%) hue-rotate(198deg) brightness(101%) contrast(105%);
+}
+/*///////////////////////////////////////////////////*/
 
 .summary1 {
     display: flex;
@@ -142,18 +167,15 @@ h1 {
     padding: 0 20px; /* Padding on both sides of the screen */
     background-color: #efefef;
 }
-
 .summary1 .img {
     padding: 10px;
     width: 33.33%; /* 1/3rd of the width */
 }
-
 .summary1 .img img {
     width: 100%; /* Make the image fill the container */
     height: auto;
     margin: 20px 0; /* Adjust vertical margin as needed */
 }
-
 .summary2 .summary1 {
     background-color: #ffffff;
     border-bottom: #000000;
@@ -162,13 +184,12 @@ h1 {
 
 
 
-
+/*///////////////////////////////////////////////////*/
 .description {
 
     margin: 20px 20px 20px 20px;
     width: 66.67%; /* 2/3rd of the width */
 }
-
 .description p {
     font-weight: normal;
     margin: 20px 0; /* Adjust vertical margin as needed */
