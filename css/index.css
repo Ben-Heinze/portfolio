@@ -6,45 +6,100 @@ body {
 	overflow-x: hidden;
 }
 
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 32px;
+	margin: 10px 0;
+}
+.block {
+	margin-bottom: 50px;
+}
+.row img {
+	width: 400px;
+	height: auto;
+	margin-right: 5%;
+}
+
+
+@media (max-width: 800px) {
+	.row img {
+		width: 50%;
+		height: auto;
+		margin-right: 5%;
+
+	}
+	.row{
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* Centers items horizontally */
+		justify-content: center;
+	}
+
+}
+
+.hobbies {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.hobbies img {
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+	width: 40%;
+	/*max-width: 40%; !* Ensure the image doesn't grow too large *!*/
+	height: auto;
+	transition: filter 0.3s;
+}
+
+.hobbies img:hover {
+	filter: opacity(80%);
+}
+
+.row .description {
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0 40px 0 40px;
+	max-width: 800px;
+}
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 20px; /* Space between image and paragraph */
+}
+
+.description {
+	flex: 1;
+	margin: 0;
+}
+
+@media (max-width: 800px) {
+	.content {
+		flex-direction: column;
+		text-align: center; /* Center text for smaller screens */
+	}
+
+	.hobbies img {
+		max-width: 100%;
+	}
+}
+
 .meet-the-team {
 	text-align: center;
 	padding-top: 30px;
 	font-size: 32px;
 }
 
-.team-member {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: left;
-	font-size: 32px;
-	margin: 10px 0;
-}
-
-.team-member img {
-	width: 400px;
-	height: auto;
-	margin-right: 5%;
-}
-@media (max-width: 800px) {
-	.team-member img {
-		width: 50%;
-		height: auto;
-		margin-right: 5%;
-	}
-
-}
-
-.team-member .description {
-	font-size: 20px;
-	font-weight: normal;
-}
-
-/* Adjust description width to fit better beside the image */
-.description {
-	width: 100%;
-	max-width: 600px;
-}
+/*!* Adjust description width to fit better beside the image *!*/
+/*.description {*/
+/*	width: 90%;*/
+/*	max-width: 600px;*/
+/*}*/
 
 /* Black divider line */
 .divider {
@@ -70,4 +125,29 @@ h3 {
 
 p {
 	padding: 0;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*Project sector header*/
+.sector {
+	background-color: #2b78e4;
+	width: 50%; /* Set the width of the div */
+	height: 50px;
+	margin: 20px auto; /* Center the div horizontally */
+	padding: 20px;
+	border-radius: 100px;
+}
+
+.sector h1{
+
+}
+@media screen and (max-width: 800px) {
+	.sector{
+		width: 80%;
+	}
+}
+.sector h1{
+	color: white;
+	text-align: center;
 }
