@@ -16,7 +16,8 @@ body {
     border-radius: 10px;
     max-width: 1440px; /* Limit maximum width to 2560px */
     margin: 0 auto; /* Center the container */
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     overflow: hidden; /* Hide overflow content */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
@@ -58,12 +59,19 @@ h1 {
 }
 /*Project sector header*/
 .sector {
-    background-color: #5ba0fd;
+    background-color: #2b78e4;
     width: 50%; /* Set the width of the div */
     margin: 20px auto; /* Center the div horizontally */
+    padding: 20px;
     border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+    .sector{
+        width: 80%;
+    }
 
 }
+
 .sector h1{
     color: white;
     text-align: center;
