@@ -162,8 +162,6 @@ h1 {
 }
 
 
-
-
 /*///////////////////////////////////////////////////*/
 .description {
 
@@ -173,7 +171,7 @@ h1 {
 .description p {
     font-weight: normal;
     margin: 20px 0; /* Adjust vertical margin as needed */
-    font-size: 30px; /* Set font size as a percentage of the default font size */
+    font-size: 24px; /* Set font size as a percentage of the default font size */
 }
 
 /* Media Query for mobile screens */
