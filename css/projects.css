@@ -175,6 +175,7 @@ h1 {
     width: 100%; /* Make the image fill the container */
     height: auto;
     margin: 20px 0; /* Adjust vertical margin as needed */
+    border-radius: 5px;
 }
 .summary2 .summary1 {
     background-color: #ffffff;
