@@ -47,7 +47,7 @@ body {
 
 .width {
     border-radius: 10px;
-    max-width: 1130px; /* Limit maximum width to 2560px */
+    max-width: 1130px;
     margin: 0 auto; /* Center the container */
     margin-top: 0px;
     margin-bottom: 30px;
