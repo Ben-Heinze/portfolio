@@ -21,10 +21,9 @@ body {
     padding: 20px 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
+    margin: 40px auto auto auto;
     max-width: 60vh; /* Set max-width to 60vh when screen width is very wide */
     width: 80%; /* Adjust width as needed when screen width is shrunken */
-    margin-top: 40px;
 }
 
 @media screen and (min-width: 1200px) {

@@ -55,9 +55,7 @@ p{
 .width {
 	border-radius: 10px;
 	max-width: 1130px; /* Limit maximum width to 2560px */
-	margin: 0 auto; /* Center the container */
-	margin-top: 0px;
-	margin-bottom: 30px;
+	margin: 0 auto 30px auto; /* Center the container */
 	overflow: hidden; /* Hide overflow content */
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
