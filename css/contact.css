@@ -31,6 +31,7 @@ body {
     /* Adjust width for screens wider than 1200px */
     .container {
         max-width: 60vh;
+        margin-bottom: 20px;
     }
 }
 
@@ -86,4 +87,23 @@ button:hover {
 
 .h3-container {
     margin: 20px 0;
+}
+
+/*/////// Large Icons /////////*/
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.icon img {
+    width: 100px; /* Adjust the size as needed */
+    transition: opacity 0.3s ease;
+}
+
+.icon img:hover {
+    opacity: 0.8;
 }
