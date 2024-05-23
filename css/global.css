@@ -180,6 +180,56 @@ a:active{
 }
 
 
+/*/////////////////////*/
 
+footer {
+	background-color: #ededed;
+	color: #4e4e4e;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+footer .contact-info {
+	display: flex;
+	align-items: center;
+	gap: 30px; /* Space between contact info items */
+}
+
+footer .contact-info p,
+footer .contact-info a {
+	margin: 0;
+}
+
+footer .contact-info a {
+	color: #4e4e4e;
+	text-decoration: none;
+}
+
+footer .contact-info a:hover {
+	text-decoration: underline;
+}
+
+footer .social-media {
+	display: flex;
+	align-items: center;
+	gap: 20px; /* Space between social media icons */
+	margin-left: 40px; /* Space between contact info and social media */
+	margin-bottom:20px
+}
+
+footer .social-media a {
+	margin: 0;
+}
+
+footer .social-media img {
+	width: 30px;
+	height: 30px;
+}
 
 
