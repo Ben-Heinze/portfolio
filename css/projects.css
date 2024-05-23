@@ -31,16 +31,7 @@
     max-height: 80%;
 }
 
-/* Hover effect to indicate clickability */
-.img img:hover {
-    filter: brightness(80%);
-}
-
-/* Removes dimming when expanded */
-.img .expanded-img:hover {
-    filter: brightness(100%);
-}
-/*//////////////////////*//*//////////////////////*//*//////////////////////*//*//////////////////////*/
+/*//////////////////////*/
 
 body {
     margin: 0;
@@ -50,10 +41,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-body {
-    margin: 0; /* Remove default body margin */
 }
 
 /*///////////////////////////////////////////////////*/
@@ -108,26 +95,6 @@ h1 {
 
 /*///////////////////////////////////////////////////*/
 
-/*!*Project sector header*!*/
-/*.sector {*/
-/*    background-color: #2b78e4;*/
-/*    width: 50%; !* Set the width of the div *!*/
-/*    margin: 20px auto; !* Center the div horizontally *!*/
-/*    padding: 20px;*/
-/*    border-radius: 100px;*/
-/*}*/
-/*@media screen and (max-width: 800px) {*/
-/*    .sector{*/
-/*        width: 80%;*/
-/*    }*/
-
-/*}*/
-
-/*.sector h1{*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*}*/
-/*///////////////////////////////////////////////////*/
 
 /*Project Banner with clickable links*/
 .banner {
@@ -182,6 +149,18 @@ h1 {
     border-bottom: #000000;
     border-bottom-width: 2px;
 }
+
+
+/*///////// thumbnail mouse hovering/////////////*/
+.width .img img {
+    transition: filter 0.3s ease; /* Apply transition to the filter property */
+}
+
+/* Hover effect to make the image slightly darker */
+.width .img img:hover {
+    filter: brightness(80%); /* Adjust brightness to make the image darker */
+}
+
 
 
 
