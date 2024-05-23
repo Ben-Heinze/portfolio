@@ -108,25 +108,25 @@ h1 {
 
 /*///////////////////////////////////////////////////*/
 
-/*Project sector header*/
-.sector {
-    background-color: #2b78e4;
-    width: 50%; /* Set the width of the div */
-    margin: 20px auto; /* Center the div horizontally */
-    padding: 20px;
-    border-radius: 100px;
-}
-@media screen and (max-width: 800px) {
-    .sector{
-        width: 80%;
-    }
+/*!*Project sector header*!*/
+/*.sector {*/
+/*    background-color: #2b78e4;*/
+/*    width: 50%; !* Set the width of the div *!*/
+/*    margin: 20px auto; !* Center the div horizontally *!*/
+/*    padding: 20px;*/
+/*    border-radius: 100px;*/
+/*}*/
+/*@media screen and (max-width: 800px) {*/
+/*    .sector{*/
+/*        width: 80%;*/
+/*    }*/
 
-}
+/*}*/
 
-.sector h1{
-    color: white;
-    text-align: center;
-}
+/*.sector h1{*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*}*/
 /*///////////////////////////////////////////////////*/
 
 /*Project Banner with clickable links*/

@@ -1,7 +1,15 @@
 .pdf {
+    padding-top: 40px;
     margin:0 auto;
     text-align:center;
     font-family: Arial, sans-serif;
+
+
+}
+
+.pdf object{
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2); /* Shadow effect */
 }
 
 body {
@@ -9,6 +17,7 @@ body {
     padding: 0;
     overflow-y:auto;
     overflow-x:hidden;
+    font-family: 'Radio Canada Big', sans-serif;
 }
 
 .meet-the-team {
