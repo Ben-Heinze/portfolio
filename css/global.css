@@ -9,12 +9,7 @@ body{
 	flex-direction: column;
 	min-height: 100vh;
 }
-/* top logo is the horizontal logo*/
-#toplogo{
-	background-color:#313D1D;
-	border-bottom: 3px solid #46592A;
-	padding-top:10px;
-}
+
 #toplogo img{
 	display:block;
   	margin-left: auto;
@@ -163,7 +158,26 @@ a:active{
 	height: 40px;
 }
 
+/*Project sector header*/
+.sector {
+	background-color: #2b78e4;
+	width: 50%; /* Set the width of the div */
+	margin: 20px auto; /* Center the div horizontally */
+	padding: 20px;
+	border-radius: 100px;
+	max-width: 900px;
+}
+@media screen and (max-width: 800px) {
+	.sector{
+		width: 80%;
+	}
 
+}
+
+.sector h1{
+	color: white;
+	text-align: center;
+}
 
 
 
