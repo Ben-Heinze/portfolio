@@ -43,6 +43,8 @@ body {
     align-items: center;
 }
 
+
+
 /*///////////////////////////////////////////////////*/
 
 .width {
@@ -87,11 +89,26 @@ h1 {
 .grid-item h1 {
     font-size: 36px;
 }
-.grid-item li {
-    margin-left: 20px;
-    font-size: 18px;
+
+.grid-item a {
+    padding-top:0px;
+    margin: 20px;
+    /*margin-left: 20px;*/
+    font-size: 27px;
+    font-weight: 700;
     color: #5b91ec;
 }
+.grid-item a:hover {
+    color: #3471e3;
+    font-size:28px;
+    transition-duration: 0.3s;
+}
+
+/*.grid-item li {*/
+/*    margin-left: 20px;*/
+/*    font-size: 18px;*/
+/*    color: #5b91ec;*/
+/*}*/
 
 /*///////////////////////////////////////////////////*/
 
@@ -129,18 +146,22 @@ h1 {
 /*///////////////////////////////////////////////////*/
 
 .summary1 {
-    display: flex;
+    flex-direction: column; /* Stack columns vertically */
+    display: flex; /*remove this to revert to old format*/
+    align-items: center;
     width: calc(100% - 40px); /* Account for padding on both sides */
     padding: 0 20px; /* Padding on both sides of the screen */
     background-color: #efefef;
+
 }
 .summary1 .img {
     padding: 10px;
-    width: 33.33%; /* 1/3rd of the width */
+    width: 65%;
+
 }
 .summary1 .img img {
     width: 100%; /* Make the image fill the container */
-    height: auto;
+    /*height: 400px;*/
     margin: 20px 0; /* Adjust vertical margin as needed */
     border-radius: 5px;
 }
@@ -164,24 +185,20 @@ h1 {
 
 /*///////////////////////////////////////////////////*/
 .description {
-
-    margin: 20px 20px 20px 20px;
+    /*margin: 20px 20px 20px 20px;*/
     width: 66.67%; /* 2/3rd of the width */
 }
-.description p {
+.description ul li{
     font-weight: normal;
     margin: 20px 0; /* Adjust vertical margin as needed */
     font-size: 24px; /* Set font size as a percentage of the default font size */
 }
 
+
 /* Media Query for mobile screens */
 @media only screen and (max-width: 1000px) {
-    .summary1 {
-        flex-direction: column; /* Stack columns vertically */
-    }
-
     .summary1 .img, .description {
-        width: 100%; /* Full width for both columns on smaller screens */
+        width: 95%; /* Full width for both columns on smaller screens */
         font-size: 2vw;
     }
 }
